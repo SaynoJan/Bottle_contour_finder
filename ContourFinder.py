@@ -42,10 +42,10 @@ class ObjectContourDetector:
             print("Контуры не найдены.")
             return mask, None
 
-        # 6. Выбираем самый большой контур (предположительно объект) ---
+        # 6. Выбираем самый большой контур (предположительно объект)
         largest = max(contours, key=cv2.contourArea)
 
-        # 7. Рисуем контур на копии оригинала ---
+        # 7. Рисуем контур на копии оригинала
         output = img.copy()
         cv2.drawContours(output, [largest], -1, (0, 255, 0), 3)
 
