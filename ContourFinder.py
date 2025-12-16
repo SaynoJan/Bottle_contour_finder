@@ -5,7 +5,7 @@ import glob
 from datetime import datetime
 
 class ObjectContourDetector:
-    # Стандарты из вашей таблицы Excel
+  
     VOLUME_STANDARDS = {
         0.33: {
             'min': 180000,  # Минимальное значение из таблицы 
